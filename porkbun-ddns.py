@@ -147,7 +147,7 @@ def main() -> int:
     int
         Non-zero on error
     """
-    logger: logging.Logger = create_logger(__name__, "porkbun_ddns.log")
+    logger: logging.Logger = create_logger(__name__, "porkbun-ddns.log")
 
     config: dict[str, Any] = read_config()
     uuid: str = config["healthchecksUUID"]
