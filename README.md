@@ -26,7 +26,7 @@ Basic instructions for set up. Note that Windows users should use the `python` c
     5. Leave "lastIP" blank
 9. Schedule a task to run every 10 minutes
     - Linux: Add a cron task using: `crontab -e`
-		- Add the job: `*/10 * * * * /path/to/porkbun-ddns/venv/bin/python3 /path/to/porkbun-ddns/porkbun-ddns.py`
+		- Add the job: `*/10 * * * * cd /path/to/porkbun-ddns; ./venv/bin/python3 porkbun-ddns.py`
     - Windows: Open the Task Scheduler
         1. Click Create Task
         2. Give it a name
