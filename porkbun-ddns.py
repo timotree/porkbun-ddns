@@ -124,7 +124,7 @@ def save_config(config: dict[str, any]):
         file.write(data)
 
 
-def ping_healthchecks(uuid: str, body: str = None):
+def ping_healthchecks(uuid: str, data: str = None):
     """Pings your Healthchecks.io UUID.
 
     API documentation: https://healthchecks.io/docs/http_api/
@@ -136,7 +136,7 @@ def ping_healthchecks(uuid: str, body: str = None):
     data : str, optional
         Additional diagnostic information
     """
-    requests.post(f"https://hc-ping.com/{uuid}", data=body)
+    requests.post(f"https://hc-ping.com/{uuid}", data=data)
 
 
 def main() -> int:
